@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <meta charset="ISO-8859-1">
+  <title>Home</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+  <style media="screen"> 
+  *,
+  *:before,
+  *:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    background-color: #080710;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+  }
+
+  .container{
+    position: relative;
+    min-height: 100vh;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    width: 95%;
+    background-color: rgba(255,255,255,0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    text-align: left;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+  }
+
+  .header-icons {
+    display: flex;
+  }
+
+  .header-icons svg {
+    margin-left: 10px; /* Adjust the spacing between icons */
+  }
+  footer{
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 50px 35px;
+    text-align: center;
+  }
+
+  .background{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+  }
+
+  .icon-1{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+  }
+  .background .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+  }
+
+  .shape:first-child{
+    border-radius: 56% 44% 57% 43% / 42% 30% 70% 58% ;
+    background: linear-gradient(#1845ad,#23a2f6);
+    left: -40px;
+    top: -50px;
+  } 
+
+  .shape:last-child{
+    border-radius: 30% 70% 57% 43% / 63% 42% 58% 37% ;
+    background: linear-gradient(to right,#ff512f,#f09819);
+    right: 150px;
+    bottom: 150px;
+  }
+
+  .content{
+    width: 95%;
+    margin: 0 auto;
+    background-color: rgba(255,255,255,0.13);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    padding: 50px 35px;
+    text-align: center;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+  }
+
+  .content h3{
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 42px;
+  }
+
+  .content p{
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  a{
+    color: #23a2f6;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a:hover{
+    text-decoration: underline;
+  }
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+
+    <header>
+      <h2>Archive</h2>
+      <div class="header-icons">
+          <a href="/home"><img src="src\main\resources\templates\imges\home.png"></a>
+          <a th:href="/userpage"><img src="src\main\resources\templates\imges\user.png"></a>
+      </div>
+  </header>
+    
+    <div class="content">
+      <h3>Welcome to Our Website</h3>
+      <p>This is a sample homepage styled using Glassmorphism design.</p>
+      <p>Feel free to explore our website!</p>
+      <p>If you're already a member, <a href="/login">Login here</a>.</p>
+      <p>If not, you can <a href="/register">Register now</a>.</p>
+    </div>
+
+    <footer>
+      <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+  </div>
+
+</body>
+</html>
